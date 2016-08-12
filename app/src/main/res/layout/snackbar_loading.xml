@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/snackbar_loading_snackbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:background="@color/color_primary_dark"
+    android:visibility="gone"
+    >
+
+    <TextView
+        android:id="@+id/snackbar_loading_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_spacing"
+        android:paddingLeft="@dimen/small_spacing"
+        android:paddingRight="@dimen/small_spacing"
+        android:paddingTop="@dimen/small_spacing"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_normal"
+        />
+
+    <com.gc.materialdesign.views.ProgressBarIndeterminate
+        android:id="@+id/snackbar_loading_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        />
+
+</LinearLayout>

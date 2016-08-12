@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.scardenas.gamelibrary.ui.MainActivity"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:elevation="0dp"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/main_btn_add_new_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_spacing"
+        app:backgroundTint="@color/color_accent"
+        app:rippleColor="@color/white"
+        app:srcCompat="@drawable/ic_add_light"
+        app:layout_anchor="@+id/main_recycler_view"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_behavior="com.example.scardenas.gamelibrary.utils.FABScrollBehavior"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

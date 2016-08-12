@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Game Library</string>
+    <!-- Welcome Screen -->
+    <string name="welcome_btn_next">NEXT</string>
+    <string name="welcome_btn_got_it">GOT IT</string>
+    <string name="welcome_btn_skip">SKIP</string>
+    <!-- Welcome Screen 1 -->
+    <string name="screen_1_title">Game Library</string>
+    <string name="screen_1_desc">Build your game library by picking games and plataforms form IGDB</string>
+    <string name="screen_2_title">Games Wishlist</string>
+    <string name="screen_2_desc">Plan the games you wish to have!</string>
+    <string name="screen_3_title">Game Queue</string>
+    <string name="screen_3_desc">Play a lot of games at the same time? Keep track of them!</string>
+    <string name="screen_4_title">Rate and Share</string>
+    <string name="screen_4_desc">Rate games and review them, then share your libraries with friends!</string>
+    <!-- Main Screen -->
+    <string name="main_search_explanation">Search for a game!</string>
+    <string name="main_empty_list_explanation">You have no games in your library, add some with the add button!</string>
+    <string name="main_search_edit_text_hint">Title</string>
+    <string name="main_btn_search">Search</string>
+    <string name="main_game_removed_snackbar_text">%s removed from your library</string>
+    <string name="main_game_removed_snackbar_action">UNDO</string>
+    <!-- Game List Screen -->
+    <string name="game_list_searching_for_games">Searching for games</string>
+    <string name="game_list_game_added_to_library">%s was added to your library!</string>
+    <string name="game_list_error_searching">Error searching for %s</string>
+    <string name="game_list_nothing_found">Couldn\'t find anything searching for %s, try searching again</string>
+    <string name="game_list_footer">Load more</string>
+    <!-- Game Card -->
+    <string name="game_card_score">%d</string>
+    <string name="game_card_no_score">--</string>
+</resources>

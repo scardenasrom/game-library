@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/snackbar_info_undo_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_accent"
+    android:padding="@dimen/small_spacing"
+    >
+
+    <TextView
+        android:id="@+id/snackbar_info_undo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/snackbar_info_action"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small"
+        />
+
+    <TextView
+        android:id="@+id/snackbar_info_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_normal_button"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/small_spacing"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_normal"
+        />
+
+</RelativeLayout>

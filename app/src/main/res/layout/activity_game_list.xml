@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/game_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/game_list_layout_search_for_another"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_primary_dark"
+        android:paddingLeft="@dimen/xxlarge_spacing"
+        android:paddingRight="@dimen/xxlarge_spacing"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:id="@+id/game_list_text_view_nothing_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/medium_spacing"
+                android:paddingLeft="@dimen/xxlarge_spacing"
+                android:paddingRight="@dimen/xxlarge_spacing"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/game_list_text_input_layout_game_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_spacing"
+                android:layout_marginLeft="@dimen/large_spacing"
+                android:layout_marginRight="@dimen/large_spacing"
+                android:textColorHint="@color/white"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/game_list_text_input_edit_text_game_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/main_search_edit_text_hint"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/game_list_btn_game_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_normal_button"
+                android:layout_marginLeft="@dimen/xxlarge_spacing"
+                android:layout_marginRight="@dimen/xxlarge_spacing"
+                android:text="@string/main_btn_search"
+                android:textColor="@color/white"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/snackbar_loading" />
+
+</RelativeLayout>

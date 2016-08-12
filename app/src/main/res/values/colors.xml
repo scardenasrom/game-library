@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#78909C</color>
+    <color name="color_primary_dark">#455A64</color>
+    <color name="color_accent">#2979FF</color>
+
+    <color name="color_primary_lighter">#B0BEC5</color>
+    <color name="color_accent_lighter">#82B1FF</color>
+    <color name="color_accent_transparent">#502979FF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_pressed">#70FFFFFF</color>
+    
+    <!-- Slider Screen Colors -->
+    <color name="screen_color">#90A4AE</color>
+    <color name="dot_color">#CFD8DC</color>
+    <color name="inactive_dot_color">#455A64</color>
+
+    <!-- Snackbar Colors -->
+    <color name="alert_snackbar_bg">#ff3d00</color>
+</resources>
