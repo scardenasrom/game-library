@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.scardenas.gamelibrary.ui.GameDetailActivity"
+    tools:showIn="@layout/activity_game_detail"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/medium_spacing"
+            android:text="SCREENSHOTS"
+            android:textColor="@color/color_primary_dark"
+            android:textSize="@dimen/text_large"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/game_detail_screenshots_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_spacing"
+            android:layout_marginLeft="@dimen/small_spacing"
+            android:layout_marginRight="@dimen/small_spacing"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:scrollbars="horizontal"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

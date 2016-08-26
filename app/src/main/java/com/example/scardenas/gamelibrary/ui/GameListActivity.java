@@ -85,7 +85,8 @@ public class GameListActivity extends BaseActivity {
             @Override
             public void onGameClick(Game game) {
                 if (customLoadingSnackbar.getVisibility() == View.GONE)
-                    snackBarUtils.createInfoSnackbar(recyclerView, game.getName()).show();
+//                    snackBarUtils.createInfoSnackbar(recyclerView, game.getName()).show();
+                GameDetailActivity_.intent(GameListActivity.this).game(game).start();
             }
         }, new GameView.FABItemClickListener() {
             @Override

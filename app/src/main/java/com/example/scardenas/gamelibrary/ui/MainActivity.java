@@ -65,7 +65,8 @@ public class MainActivity extends BaseActivity {
         gameListAdapter = new GameListAdapter(MainActivity.this, gameList, new GameView.GameViewItemClickListener() {
             @Override
             public void onGameClick(Game game) {
-                snackbarUtils.createInfoSnackbar(toolbar, game.getName()).show();
+//                snackbarUtils.createInfoSnackbar(toolbar, game.getName()).show();
+                GameDetailActivity_.intent(MainActivity.this).game(game).start();
             }
         }, null);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);

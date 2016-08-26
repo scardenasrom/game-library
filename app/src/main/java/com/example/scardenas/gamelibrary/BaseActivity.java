@@ -12,6 +12,17 @@ import com.google.gson.Gson;
 
 public class BaseActivity extends AppCompatActivity {
 
+    protected static final String CLOUDINARY_IMAGES_URL = "https://res.cloudinary.com/igdb/image/upload/t_";
+    protected static final String CLOUDINARY_SIZE_COVER_SMALL = "cover_small_2x/";
+    protected static final String CLOUDINARY_SIZE_COVER_BIG = "cover_big_2x/";
+    protected static final String CLOUDINARY_SIZE_SCREENSHOT_MED = "screenshot_med_2x/";
+    protected static final String CLOUDINARY_SIZE_LOGO_MED = "logo_med_2x/";
+    protected static final String CLOUDINARY_SIZE_SCREENSHOT_BIG = "screenshot_big_2x/";
+    protected static final String CLOUDINARY_SIZE_SCREENSHOT_HUGE = "screenshot_huge_2x/";
+    protected static final String CLOUDINARY_SIZE_THUMB = "thumb_2x/";
+    protected static final String CLOUDINARY_SIZE_MICRO = "micro_2x/";
+    protected static final String CLOUDINARY_IMAGES_FORMAT = ".jpg";
+
     protected static final int INFO_SNACKBAR_WITH_UNDO_DURATION = 5000;
 
     protected void makeViewDisappear(View view) {
